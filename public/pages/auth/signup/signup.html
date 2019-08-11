@@ -1,0 +1,42 @@
+<h2>Sign up</h2>
+
+<form method="POST" id="supSignupForm">
+
+    <label for="supEmail">Email</label><span id="supEwarning" class="supWarning"></span><br />
+    <input type="email" id="supEmail" name="email" required autocorrect="off" autocapitalize="off"
+        spellcheck="false"><br /><br />
+
+    <label for="supUsername">Username</label><span id="supUwarning" class="supWarning"></span><br />
+    <input type="text" id="supUsername" name="username" required autocorrect="off" autocapitalize="off"
+        spellcheck="false"><br /><br />
+
+    <label for="supPassword">Password</label><span id="supPwarning" class="supWarning"></span><br />
+    <input type="password" id="supPassword" name="password" required autocomplete="off" autocorrect="off"
+        autocapitalize="off" spellcheck="false"><br /><br />
+
+    <label for="supPassword2">Confirm Password</label><span id="supP2warning" class="supWarning"></span><br />
+    <input type="password" id="supPassword2" name="password2" required autocomplete="off" autocorrect="off"
+        autocapitalize="off" spellcheck="false"><br /><br />
+
+    <button type="submit">Submit</button>
+</form>
+
+<a id="supAlreadyHaveLink">I already have a verification code</a>
+
+<form method="POST" id="supVerifyForm">
+
+    <p>A verification code was sent to your email. Please enter the code below.</p>
+
+    <label for="supVerifyEmail">Email</label><br />
+    <input type="email" id="supVerifyEmail" name="email" placeholder="Enter email" required autocorrect="off"
+        autocapitalize="off" spellcheck="false"><br /><br />
+
+    <label for="supVerifyCode">Verification Code</label><br />
+    <input type="number" id="supVerifyCode" name="verificationCode" placeholder="Enter code" required autocomplete="off"
+        autocorrect="off" autocapitalize="off" spellcheck="false"><br /><br />
+
+    <button type="submit">Submit</button>
+
+    <p>Didn't receive a code? Wait 5 mins, check spam folder, or close this dialog and try again.</p>
+
+</form>

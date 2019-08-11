@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <link rel="canonical" href="https://www.YourWebDomainHere.com"> This is a hint for search engines to let them know the main source of a webpage -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA - Example</title>
+  <link rel="stylesheet" type="text/css" href="spa.css">
+</head>
+
+<body>
+
+  <!-- Navigation menu for your web pages -->
+  <nav id="spaTopNav">
+    <a href="#pages/home/home.html" class="spaPlainAnchors">Home</a>
+    <a href="#pages/about/about.html" class="spaPlainAnchors">About</a>
+    <a href="#pages/settings/settings.html" class="spaPlainAnchors">Settings</a>
+    <div>
+      <a href="#pages/settings/settings.html" id="spaUserBtn" class="spaPlainAnchors"> </a>
+      <a href="/logout" id="spaLogoutBtn" class="spaAnchorBtns">Log out</a>
+      <a href="#pages/auth/login/login.html" id="spaLoginBtn" class="spaAnchorBtns">Log in</a>
+      <a href="#pages/auth/signup/signup.html" id="spaSignupBtn" class="spaAnchorBtns">Sign up</a>
+    </div>
+  </nav>
+
+  <div id="spaPageArea">
+    <!-- Your web pages will be loaded into this div -->
+  </div>
+
+  <!-- Modal pop-up -->
+  <div id="modalBackdrop" class="modalBackdrop">
+    <div id="modalWindow" class="modalWindow">
+      <span id="modalCloseBtn" class="modalCloseBtn"> ❌ </span>
+      <div id="modalContentContainer"></div>
+    </div>
+  </div>
+
+  <!-- Alert pop-up -->
+  <div id="spaAlertBox">
+    <p id="spaAlertText"></p>
+    <button id="spaAlertOkBtn">OK</button>
+  </div>
+
+  <!-- Loading indicator -->
+  <p id="spaLoadingText">Loading...</p>
+
+  <!-- Toast notification -->
+  <div id="spaToast">
+    <span id="spaToastMessage"></span>
+    <span id="spaToastUnicodeIcon"></span>
+  </div>
+
+  <script src="spa.js"></script>
+
+</body>
+
+</html>
