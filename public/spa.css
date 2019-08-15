@@ -4,7 +4,7 @@ Navigation bar
 
 ************************************************************/
 
-#spaTopNav {
+.spa-top-bar {
     background-color: rgba(0, 0, 0, 0.30);
 }
 
@@ -19,9 +19,8 @@ Navigation bar
     color: green;
 }
 
-#spaTopNav div {
+.spa-top-right-menu-btn {
     float: right;
-    margin-right: 5.3px;
 }
 
 .spaAnchorBtns {
@@ -44,6 +43,33 @@ Navigation bar
 #spaUserBtn {
     white-space: pre;
     visibility: hidden;
+}
+
+.spa-hamburger-svg {
+    vertical-align: top;
+    margin: 18px;
+    color: inherit;
+}
+
+.spa-account-svg {
+    vertical-align: top;
+    color: inherit;
+    margin: 14px;
+    width: 32px;
+    height: 32px;
+}
+
+.spa-top-left-menu-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+}
+
+.spa-header-h1 {
+    display: inline-block;
+    font-weight: lighter;
+    margin: 17px 0px 17px 0px;
 }
 
 /***********************************************************
