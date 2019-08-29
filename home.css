@@ -1,29 +1,81 @@
 /***********************************************************
 
-Navigation bar
+Body
 
 ************************************************************/
 
-.spa-top-bar {
-    background-color: rgba(0, 0, 0, 0.30);
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 11pt;
+    font-weight: 400;
 }
 
-.spaPlainAnchors {
+/***********************************************************
+
+Header
+
+************************************************************/
+
+header {
+    background-color: rgb(78, 78, 78);
+    color: #d2d2d2;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 18pt;
+    font-weight: lighter;
+    margin: 16px 0px 16px 0px;
+}
+
+.account-btn {
+    float: right;
+}
+
+.menu-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+}
+
+.svg-hamburger-menu {
+    vertical-align: top;
+    margin: 18px;
+    color: inherit;
+}
+
+.svg-account {
+    vertical-align: top;
+    color: inherit;
+    margin: 14px;
+    width: 32px;
+    height: 32px;
+}
+
+/***********************************************************
+
+General anchors and anchors as buttons
+
+************************************************************/
+
+.anchor-plain {
     display: inline-block;
     padding: 15px;
     text-decoration: none;
     color: inherit;
 }
 
-.spaPlainAnchors:hover {
+.anchor-plain:hover {
     color: green;
 }
 
-.spa-top-right-menu-btn {
-    float: right;
-}
-
-.spaAnchorBtns {
+.anchor-btn {
     background-color: green;
     color: white;
     padding: 10px 15px;
@@ -32,75 +84,13 @@ Navigation bar
     font: 400 13.3333px Arial;
 }
 
-.spaAnchorBtns:hover {
+.anchor-btn:hover {
     background-color: #009b00;
 }
 
-#spaLogoutBtn {
-    display: none;
-}
-
-#spaUserBtn {
-    white-space: pre;
-    visibility: hidden;
-}
-
-.spa-hamburger-svg {
-    vertical-align: top;
-    margin: 18px;
-    color: inherit;
-}
-
-.spa-account-svg {
-    vertical-align: top;
-    color: inherit;
-    margin: 14px;
-    width: 32px;
-    height: 32px;
-}
-
-.spa-top-left-menu-btn {
-    display: inline-block;
-    vertical-align: top;
-    width: 60px;
-    height: 60px;
-}
-
-.spa-header-h1 {
-    display: inline-block;
-    font-weight: lighter;
-    margin: 17px 0px 17px 0px;
-}
-
 /***********************************************************
 
-Body
-
-************************************************************/
-
-body {
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;
-    font-weight: 400;
-}
-
-/***********************************************************
-
-Page area
-
-************************************************************/
-
-#spaPageArea {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/***********************************************************
-
-App buttons
+General buttons and input buttons 
 
 ************************************************************/
 
@@ -148,11 +138,11 @@ Alert pop-up
 
 ************************************************************/
 
-#spaAlertBox {
+.alert-box {
     display: none;
 }
 
-#spaAlertOkBtn {
+.alert-ok-btn {
     margin-top: 20px;
     float: right;
 }
@@ -163,7 +153,7 @@ Modal pop-up
 
 ************************************************************/
 
-.modalBackdrop {
+.modal-backdrop {
     display: none;
     position: fixed;
     top: 0;
@@ -173,7 +163,7 @@ Modal pop-up
     background-color: #19191978;
 }
 
-.modalWindow {
+.modal-window {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -185,7 +175,7 @@ Modal pop-up
     padding: 20px;
 }
 
-.modalCloseBtn {
+.modal-close-btn {
     color: #636363;
     font-size: 22px;
     white-space: pre;
@@ -196,7 +186,7 @@ Modal pop-up
     cursor: pointer;
 }
 
-.modalCloseBtn:hover {
+.modal-close-btn:hover {
     color: rgb(255, 65, 65);
 }
 
@@ -206,7 +196,7 @@ Toast notification
 
 ************************************************************/
 
-#spaToast {
+.toast {
     visibility: hidden;
     position: absolute;
     left: 50%;
@@ -220,31 +210,32 @@ Toast notification
     border-radius: 4px;
     padding: 16px;
     opacity: 0;
-  }
-  
-  #spaToast.spaShow {
+}
+
+.toast.show {
     visibility: visible;
-    animation: spaToastInOut 2.0s ease; /* If you change time duration here, you have to change it in the javascript function as well */
-  }
-  
-  @keyframes spaToastInOut {
+    animation: toastInOut 2.0s ease;
+    /* If you change time duration here, you have to change it in the javascript function as well */
+}
+
+@keyframes toastInOut {
     0% {
-      transform: translate(-50%, 0%);
-      opacity: 0;
+        transform: translate(-50%, 0%);
+        opacity: 0;
     }
     10% {
-      transform: translate(-50%, -50%);
-      opacity: 1;
+        transform: translate(-50%, -50%);
+        opacity: 1;
     }
     50% {
-      transform: translate(-50%, -50%);
-      opacity: 1;
+        transform: translate(-50%, -50%);
+        opacity: 1;
     }
     100% {
-      transform: translate(-50%, -100%);
-      opacity: 0;
+        transform: translate(-50%, -100%);
+        opacity: 0;
     }
-  }
+}
 
 /***********************************************************
 
@@ -252,20 +243,20 @@ Loading indicator
 
 ************************************************************/
 
-#spaLoadingText {
+.loading-text {
     display: none;
     text-align: center;
 }
 
-.spaFadeInWithDelay {
-    animation: spaDelayedFadeIn 0.5s 1.0s forwards;
+.fade-in-with-delay {
+    animation: delayedFadeIn 0.5s 1.0s forwards;
 }
 
-@keyframes spaDelayedFadeIn {
+@keyframes delayedFadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
 }
