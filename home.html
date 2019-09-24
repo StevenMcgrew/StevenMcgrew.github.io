@@ -37,12 +37,13 @@
     </header>
 
     <!-- Dropdown for previous vehicle selection -->
-    <div class="dropdown-root-container">
+    <div class="dropdown-root-container">        
         <div id="dropdown" class="dropdown card">
 
             <div id="selectedItem" class="dropdown-item">
-                <span id="vin" class="vin">WMWZC5C52BWM10346</span>
-                <span id="vehicle" class="vehicle">2011 Mini Cooper S Countryman ALL4 (R60) L4-1.6L Turbo (N18)</span>
+                <span id="dropDownPlaceholder">Previous vehicles</span>
+                <span id="vin" class="vin"></span>
+                <span id="vehicle" class="vehicle"></span>
             </div>
 
             <div id="itemsPanel" class="items-panel card">
@@ -63,9 +64,10 @@
             </svg>
 
         </div>
-    </div>
 
-    <button>New Vehicle</button>
+        <button class="new-vehicle-btn">New Vehicle</button>
+
+    </div>
 
     <!-- Modal pop-up -->
     <div id="modalBackdrop" class="modal-backdrop">
