@@ -12,7 +12,8 @@
 
 <body>
 
-    <!-- Navigation menu for your web pages -->
+    <div id="backdrop" class="backdrop"></div>
+
     <header>
         <div class="menu-btn">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-hamburger-menu" fill="currentColor" width="24"
@@ -34,6 +35,37 @@
             </svg>
         </div>
     </header>
+
+    <!-- Dropdown for previous vehicle selection -->
+    <div class="dropdown-root-container">
+        <div id="dropdown" class="dropdown card">
+
+            <div id="selectedItem" class="dropdown-item">
+                <span id="vin" class="vin">WMWZC5C52BWM10346</span>
+                <span id="vehicle" class="vehicle">2011 Mini Cooper S Countryman ALL4 (R60) L4-1.6L Turbo (N18)</span>
+            </div>
+
+            <div id="itemsPanel" class="items-panel card">
+
+                <div class="dropdown-item">
+                    <span class="vin">WMWZC5C52BWM10346</span>
+                    <span class="vehicle">2011 Mini Cooper S Countryman ALL4 (R60) L4-1.6L Turbo (N18)</span>
+                </div>
+
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-arrow" fill="currentColor"
+                viewBox="0 0 8.4816234 4.2551703" height="4.2551703mm" width="8.4816236mm">
+                <g transform="translate(-106.46981,-110.68796)">
+                    <path transform="matrix(1.4722183,0,0,0.85286348,-39.342215,11.019712)"
+                        d="m 101.92295,121.85234 -1.44028,-2.49463 -1.440278,-2.49464 2.880558,0 2.88056,0 -1.44028,2.49464 z" />
+                </g>
+            </svg>
+
+        </div>
+    </div>
+
+    <button>New Vehicle</button>
 
     <!-- Modal pop-up -->
     <div id="modalBackdrop" class="modal-backdrop">
