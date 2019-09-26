@@ -27,7 +27,8 @@
     ************************************************************/
 
     click(element('menuBtn'), function () {
-        // open menu panel
+        backdrop.style.display = 'block'
+        leftMenuPopout.style.display = 'block'
     })
 
     click(element('h1HomeBtn'), function () {
@@ -35,7 +36,8 @@
     })
 
     click(element('accountBtn'), function () {
-        // open account options panel
+        backdrop.style.display = 'block'
+        rightMenuPopout.style.display = 'block'
     })
 
     /***********************************************************
@@ -55,6 +57,8 @@
         itemsPanel.style.display = 'none'
         newVehPanel.style.display = 'none'
         backdrop.style.display = 'none'
+        leftMenuPopout.style.display = 'none'
+        rightMenuPopout.style.display = 'none'
     })
 
     click(itemsPanel, function (e) {
