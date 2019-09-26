@@ -265,13 +265,12 @@ New vehicle selection
 
 .new-vehicle-panel {
     display: inline-block;
-    width: 278px;
+    width: 288px;
     height: 393px;
     padding-bottom: 10px;
 }
 
 .new-vehicle-subpanel {
-    font-size: 12pt;
     text-align: center;
 }
 
@@ -287,8 +286,8 @@ New vehicle selection
     font-size: 11pt;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    margin: 6px 48px;
-    width: 177px;
+    margin: 6px 0px 6px 0px;
+    width: 200px;
     height: 29px;
     border: solid 1px rgb(169, 169, 169);
     box-sizing: border-box;
