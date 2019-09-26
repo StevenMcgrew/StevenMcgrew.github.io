@@ -15,13 +15,13 @@
     <div id="backdrop" class="backdrop"></div>
 
     <header>
-        <div class="menu-btn">
+        <div id="menuBtn" class="menu-btn">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-hamburger-menu" fill="currentColor" width="24"
                 height="24" viewBox="0 0 24 24">
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
         </div>
-        <h1>RealCarRepairs</h1>
-        <div class="account-btn">
+        <h1 id="h1HomeBtn">RealCarRepairs</h1>
+        <div id="accountBtn" class="account-btn menu-btn">
             <!-- <a href="#pages/settings/settings.html" id="spaUserBtn" class="anchor-plain"> </a>
             <a href="/logout" id="spaLogoutBtn" class="anchor-btn">Log out</a>
             <a href="#pages/auth/login/login.html" id="spaLoginBtn" class="anchor-btn">Log in</a>
@@ -41,16 +41,15 @@
         <div id="dropdown" class="dropdown card">
 
             <div id="selectedItem" class="dropdown-item">
-                <span id="dropDownPlaceholder">Previous vehicles</span>
                 <span id="vin" class="vin"></span>
                 <span id="vehicle" class="vehicle"></span>
             </div>
 
             <div id="itemsPanel" class="items-panel card">
 
-                <div class="dropdown-item">
-                    <span class="vin">WMWZC5C52BWM10346</span>
-                    <span class="vehicle">2011 Mini Cooper S Countryman ALL4 (R60) L4-1.6L Turbo (N18)</span>
+                <div hidden id="itemTemplate" class="dropdown-item">
+                    <span class="vin"></span>
+                    <span class="vehicle"></span>
                 </div>
 
             </div>
@@ -65,7 +64,7 @@
 
         </div>
 
-        <button class="new-vehicle-btn">New Vehicle</button>
+        <button id="newVehicleBtn" class="new-vehicle-btn">New Vehicle</button>
 
     </div>
 
