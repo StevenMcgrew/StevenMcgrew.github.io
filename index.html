@@ -42,7 +42,7 @@
 
             <div id="selectedItem" class="dropdown-item">
                 <span id="vin" class="vin"></span>
-                <span id="vehicle" class="vehicle"></span>
+                <span id="vehicle" class="vehicle">Previous vehicles</span>
             </div>
 
             <div id="itemsPanel" class="items-panel card">
@@ -64,37 +64,40 @@
 
         </div>
 
-        <button id="newVehicleBtn" class="new-vehicle-btn">New Vehicle</button>
+        <!-- <button id="newVehicleBtn" class="new-vehicle-btn">New Vehicle</button> -->
 
     </div>
 
     <!-- New vehicle popup -->
-    <div id='newVehPanel' class="new-vehicle-panel">
-        <h3 class="new-vehicle-header">New Vehicle:</h3>
-        <div id='newVehSubPanel' class="new-vehicle-subpanel">
-            <input id="vinInputBox" class="veh-selector veh-input vin-input" type="text" placeholder="Enter VIN"
-                spellcheck="false" />
-            <br />
-            <em class='or-text'>OR</em>
-            <br />
-            <select id="yearSelectBox" class="veh-selector">
-                <option>Year</option>
-            </select>
-            <br />
-            <select id="makeSelectBox" class="veh-selector">
-                <option>Make</option>
-            </select>
-            <br />
-            <input id="modelInputBox" class="veh-selector veh-input" type="text" placeholder="Model"
-                spellcheck="false" />
-            <br />
-            <select id="engineSelectBox" class="veh-selector engine-select">
-                <option>Engine</option>
-            </select>
-            <br />
-            <button id="submitBtn">Submit</button>
-            <button id="resetBtn">Reset</button>
+    <div class="new-veh-root-container">
+        <div id='newVehPanel' class="new-vehicle-panel card">
+            <h3 class="new-vehicle-header">New Vehicle</h3>
+            <div id='newVehSubPanel' class="new-vehicle-subpanel">
+                <input id="vinInputBox" class="veh-selector veh-input" type="text" placeholder="Enter VIN"
+                    spellcheck="false" />
+                <br />
+                <em class='or-text'>OR</em>
+                <br />
+                <select id="yearSelectBox" class="veh-selector">
+                    <option>Year</option>
+                </select>
+                <br />
+                <select id="makeSelectBox" class="veh-selector">
+                    <option>Make</option>
+                </select>
+                <br />
+                <input id="modelInputBox" class="veh-selector veh-input" type="text" placeholder="Model"
+                    spellcheck="false" />
+                <br />
+                <select id="engineSelectBox" class="veh-selector engine-select">
+                    <option>Engine</option>
+                </select>
+                <br />
+                <button id="submitBtn">Submit</button>
+                <button id="resetBtn">Reset</button>
+            </div>
         </div>
+
     </div>
 
     <!-- menu pop-out panels -->
