@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# macOS hidden file that is used by the Finder app (potential security risk)
+.DS_Store
