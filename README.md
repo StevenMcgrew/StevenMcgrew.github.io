@@ -1,2 +1,2 @@
 # StevenMcgrew.github.io
-Personal Profile website
+Work in progress. Personal Profile website
