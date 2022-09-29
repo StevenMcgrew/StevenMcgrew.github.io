@@ -15,6 +15,14 @@ a:hover {
     margin: 0;
 }
 
+h5 {
+    color: #a1a1a1;
+}
+
+.about-list {
+    list-style-type: circle;
+}
+
 .social-list {
     list-style: none;
 }
@@ -45,10 +53,43 @@ a:hover {
 }
 
 .header-media {
-    max-width: 50rem;
+    max-width: 62.5rem;
     margin: 0 auto;
 }
 
 .profile-pic {
+    max-width: 13.375rem;
     min-width: 7.25rem;
+}
+
+.nav-content-box {
+    width: 62.5rem;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.wrap-box {
+    padding: .3125rem;
+}
+
+.wrap-item {
+    padding: .3125rem;
+}
+
+.thumbnail-box {
+    height: 9.375rem;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=640:*");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.details-box {
+    background-color: lightgray;
+    height: 7.5rem;
+    width: auto;
 }
