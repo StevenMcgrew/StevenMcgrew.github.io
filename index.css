@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #f8f8f8;
+}
+
 a {
     color: white;
 }
@@ -19,7 +23,7 @@ a:hover {
     margin: 0;
 }
 
-h5 {
+.sub-header {
     color: #a1a1a1;
 }
 
@@ -97,10 +101,13 @@ main {
     margin: 0 auto;
 }
 
-.h2,
 h2 {
-    font-size: 2rem;
     padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
 }
 
 .wrap-box {
@@ -112,7 +119,7 @@ h2 {
 }
 
 .card {
-    box-shadow: 20px 20px 20px -20px #dadada;
+    box-shadow: 0px 20px 5px -20px #dadada;
 }
 
 .thumbnail-box {
