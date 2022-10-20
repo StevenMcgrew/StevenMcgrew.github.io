@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: white;
 }
@@ -29,7 +33,7 @@ h5 {
 
 .social-list-item {
     background-color: transparent;
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
     height: min-content;
     border: none;
 }
@@ -64,7 +68,7 @@ h5 {
 }
 
 .profile-pic {
-    max-width: 13.375rem;
+    max-width: 10.375rem;
     min-width: 7.25rem;
 }
 
@@ -82,12 +86,14 @@ h5 {
 }
 
 .nav-content-box {
+    display: flex;
+    align-items: center;
     width: 62.5rem;
     margin: 0 auto;
 }
 
 main {
-    max-width: 62.5rem;
+    max-width: 64.5rem;
     margin: 0 auto;
 }
 
@@ -121,4 +127,27 @@ h2 {
     background-color: lightgray;
     height: 7.5rem;
     width: auto;
+}
+
+.cert-card {
+    max-width: 14.25rem;
+    margin: 0 auto;
+}
+
+.cert-col:first-of-type {
+    padding-left: 0.625rem;
+    padding-right: 0.3125rem;
+}
+
+.cert-col:last-of-type {
+    padding-left: 0.3125rem;
+    padding-right: 0.625rem;
+}
+
+.navbar-dark .navbar-text {
+    color: rgba(230, 230, 230);
+}
+
+.i-heart-code {
+    white-space: pre;
 }
