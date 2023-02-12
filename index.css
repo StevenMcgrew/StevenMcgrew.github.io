@@ -6,6 +6,13 @@ body {
     background-color: #f8f8f8;
 }
 
+.auto-grid {
+    --min-column-size: 5rem;
+    display: grid;
+    gap: clamp(1rem, 5vmax, 1.625rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-column-size)), 1fr));
+}
+
 .hero {
     background-image: url("images/blurry-bg.jpg");
     background-position: top;
@@ -147,6 +154,7 @@ h5 {
     color: rgba(230, 230, 230);
 }
 
-.i-heart-code {
-    white-space: pre;
+.text-monospace.mono-i {
+    display: inline-block;
+    padding-right: 0.3rem;
 }
