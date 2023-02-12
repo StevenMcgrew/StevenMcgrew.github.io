@@ -6,14 +6,6 @@ body {
     background-color: #f8f8f8;
 }
 
-a {
-    color: white;
-}
-
-a:hover {
-    color: white;
-}
-
 .hero {
     background-image: url("images/blurry-bg.jpg");
     background-position: top;
